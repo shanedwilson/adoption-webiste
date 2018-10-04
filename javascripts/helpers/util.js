@@ -1,7 +1,7 @@
 console.log('util')
 
-const printToDom = (stringToPrint, elementId) => {
-    const selectedDiv = document.getElementById(elementId);
+const printToDom = (stringToPrint) => {
+    const selectedDiv = document.getElementById('pets');
     selectedDiv.innerHTML = stringToPrint;
 };
 
