@@ -4,7 +4,7 @@ const setPets = (newArray) => {
   pets = newArray;
 };
 
-const petsBuilder = (petsArray) => {
+const petsBuilder = () => {
   console.log(pets)
 }
 
