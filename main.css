@@ -4,4 +4,12 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 5em;
 }
+
+/* .card-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    border: solid pink;
+} */
