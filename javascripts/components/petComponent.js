@@ -5,11 +5,12 @@ let counter = 0;
 
 const setPets = newArray => {
   pets = newArray;
+  console.log(pets);
 };
 
 const getPetz = () => {
   return pets;
-}
+};
 
 const sortPets = (e) => {
   const buttonId = e.target.id;
@@ -18,18 +19,7 @@ const sortPets = (e) => {
   } else {
   const filteredPets = pets.filter(x => x.type === buttonId);
   petsBuilder(filteredPets);
-}
-};
-
-const sortEvents = () => {
-  const allButton = document.getElementById('all');
-  const catButton = document.getElementById('cat');
-  const dogButton = document.getElementById('dog');
-  const dinoButton = document.getElementById('dino');
-  allButton.addEventListener('click', sortPets);
-  catButton.addEventListener('click', sortPets);
-  dogButton.addEventListener('click', sortPets);
-  dinoButton.addEventListener('click', sortPets);
+  }
 };
 
 const petsBuilder = (newPets) => {
@@ -65,8 +55,6 @@ const petsBuilder = (newPets) => {
   });
   printToDom(domString);
   counter++;
-  // createEvents();
 };
 
-
-export { setPets, petsBuilder, sortEvents, getPetz };
+export { setPets, petsBuilder, getPetz, sortPets };
