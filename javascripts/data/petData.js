@@ -1,9 +1,9 @@
-import {setPets, petsBuilder} from '../components/petComponent.js'
+import {setPets, petsBuilder, getPetz} from '../components/petComponent.js'
 
 function executeThisCodeAfterFileLoaded (){
     const data = JSON.parse(this.responseText);
     setPets(data.pets);
-    petsBuilder();
+    petsBuilder(getPetz());
 };
 
 function executeThisCodeIfXhrFails () {
