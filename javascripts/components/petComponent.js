@@ -7,9 +7,34 @@ const setPets = newArray => {
   pets = newArray;
 };
 
-const petsBuilder = () => {
+const getPetz = () => {
+  return pets;
+}
+
+const sortPets = (e) => {
+  const buttonId = e.target.id;
+  if (buttonId === 'all') {
+    petsBuilder(pets);
+  } else {
+  const filteredPets = pets.filter(x => x.type === buttonId);
+  petsBuilder(filteredPets);
+}
+};
+
+const sortEvents = () => {
+  const allButton = document.getElementById('all');
+  const catButton = document.getElementById('cat');
+  const dogButton = document.getElementById('dog');
+  const dinoButton = document.getElementById('dino');
+  allButton.addEventListener('click', sortPets);
+  catButton.addEventListener('click', sortPets);
+  dogButton.addEventListener('click', sortPets);
+  dinoButton.addEventListener('click', sortPets);
+};
+
+const petsBuilder = (newPets) => {
   let domString = "";
-  pets.forEach(pet => {
+  newPets.forEach(pet => {
     domString += `<div class="col-4 h-100">`;
     domString += `<div id="card${counter}" class="card border-dark mb-3">`;
     domString += `  <div class="card-header text-center">${pet.name}</div>`;
@@ -43,15 +68,5 @@ const petsBuilder = () => {
   // createEvents();
 };
 
-// const petFooter = () => {
-//   let cards = document.getElementsByClassName('card');
-//     for (let i = 0; i < cards.length; i++) {
-//       let cardId = card[i].id;
-//       console.log(cardId);
-//       // let cardFooter = document.getElementById('footer')
-//     }
-// };
 
-// petFooter();
-
-export { setPets, petsBuilder };
+export { setPets, petsBuilder, sortEvents, getPetz };

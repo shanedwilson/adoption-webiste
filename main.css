@@ -7,9 +7,6 @@ h1 {
     font-size: 5em;
 }
 
-/* .card-footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    border: solid pink;
-} */
+.btn {
+    width: 78px !important;
+}
