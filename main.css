@@ -1,10 +1,14 @@
 body {
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 
 h1 {
     text-align: center;
     font-size: 5em;
+}
+
+.card-header {
+    background-color: rgba(79, 161, 216, 0.603);
 }
 
 .btn {
