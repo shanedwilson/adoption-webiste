@@ -5,7 +5,6 @@ let counter = 0;
 
 const setPets = newArray => {
   pets = newArray;
-  console.log(pets);
 };
 
 const getPetz = () => {
