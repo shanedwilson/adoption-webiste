@@ -1,43 +1,12 @@
 # Adoption Website
 
-## Setup
-
-**Your project should have (at least):**
-```
-|- db
-    |- pets.json
-|- javascripts
-    |- events.js [Attaching all event listeners]
-    |- main.js [Entry point/start application]
-    |- components
-        |- petComponent.js [Writing to the dom for the pet component]
-    |- data
-        |- petData.js [XHR call for pets.json]
-|- index.html
-|- main.css
-```
-
-**Install via CDN:**
-
-- jQuery
-- Bootstrap
-
-## Requirements
-
 - As a user, I want to see a listing of all available pets. Each pet should have a card that has all this data:
-```
-Image
-Name: xxx
-Color: xxx
-Special Skill: xxx
-Type of Pet: xxx
-```
 - As a user, I want to see 3 category(type) buttons printed at the top of the page. Each should be a different color. These can be hard-coded.
 - I want to be able to click one of the 3 buttons, then only the cards that are in the category(type) should show.
 - There should be some way for the user to unfilter the results.
 
 
-![MockUp](MockUp.png)
+![Main Screenshot](./screenshots/main-screenshot.png)
 
 
 ## Technical Requirements
