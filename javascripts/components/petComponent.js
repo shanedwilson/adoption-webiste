@@ -27,7 +27,7 @@ const petsBuilder = (newPets) => {
     domString += `<div class="col-4 mb-3">`;
     domString += `<div id="card${counter}" class="card border-dark h-100">`;
     domString += `  <div class="card-header text-center font-weight-bold">${pet.name}</div>`;
-    domString += `    <img class="card-img-top p-3" src="${pet.imageUrl}" alt="${
+    domString += `    <img class="card-img-top border-secondary rounded" src="${pet.imageUrl}" alt="${
       pet.name
     }">`;
     domString += `    <div class="card-body h-100">`;

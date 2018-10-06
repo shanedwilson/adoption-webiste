@@ -11,6 +11,11 @@ h1 {
     background-color: rgba(79, 161, 216, 0.603);
 }
 
+.card-img-top {
+    border: solid gray;
+    border-radius: 25px;
+}
+
 .btn {
     width: 78px !important;
 }
